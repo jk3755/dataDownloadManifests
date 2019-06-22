@@ -5,8 +5,8 @@
 ## Use this script to download relevant sequence datasets from NCBIs SRA
 ## For ATACseq data analysis
 
-## LS1034: https://www.ncbi.nlm.nih.gov/sra/SRX5414357[accn]
-bin/fastq-dump --outdir fastq/ls1034 --gzip --skip-technical --readids --dumpbase --split-files --clip SRR8615396
+## LS1034 RNAseq: https://www.ncbi.nlm.nih.gov/sra/SRX5414357[accn]
+bin/fastq-dump --outdir ls1034/rna --gzip --skip-technical --readids --dumpbase --split-files --clip SRR8615396
 
-## LS1034: https://www.ncbi.nlm.nih.gov/sra/ERX183570[accn]
-bin/fastq-dump --outdir fastq/ls1034 --gzip --skip-technical --readids --dumpbase --split-files --clip ERR208905
+## LS1034 RRBS: https://www.ncbi.nlm.nih.gov/sra/SRX5432777[accn]
+bin/fastq-dump --outdir ls1034/rrbs --gzip --skip-technical --readids --dumpbase --split-files --clip SRR8633894

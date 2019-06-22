@@ -6,13 +6,13 @@
 ## For ATACseq data analysis
 
 ## SNU16 WGS: https://www.ncbi.nlm.nih.gov/sra/SRX5466612[accn]
-bin/fastq-dump --outdir h508/wgs --gzip --skip-technical --readids --dumpbase --split-files --clip SRR8670768
+bin/fastq-dump --outdir snu16/wgs --gzip --skip-technical --readids --dumpbase --split-files --clip SRR8670768
 
 ## SNU16 HC: https://www.ncbi.nlm.nih.gov/sra/SRX5454943[accn]
-bin/fastq-dump --outdir h508/rrbs --gzip --skip-technical --readids --dumpbase --split-files --clip SRR8657217
+bin/fastq-dump --outdir snu16/rrbs --gzip --skip-technical --readids --dumpbase --split-files --clip SRR8657217
 
 ## SNU16 RRBS: https://www.ncbi.nlm.nih.gov/sra/SRX5432497[accn]
-bin/fastq-dump --outdir h508/rna --gzip --skip-technical --readids --dumpbase --split-files --clip SRR8633575
+bin/fastq-dump --outdir snu16/rna --gzip --skip-technical --readids --dumpbase --split-files --clip SRR8633575
 
 ## SNU16 RNAseq: https://www.ncbi.nlm.nih.gov/sra/SRX5415116[accn]
-bin/fastq-dump --outdir h508/rna --gzip --skip-technical --readids --dumpbase --split-files --clip SRR8615934
+bin/fastq-dump --outdir snu16/rna --gzip --skip-technical --readids --dumpbase --split-files --clip SRR8615934

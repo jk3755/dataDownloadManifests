@@ -5,5 +5,8 @@
 ## Use this script to download relevant sequence datasets from NCBIs SRA
 ## For ATACseq data analysis
 
-## MDST8: https://www.ncbi.nlm.nih.gov/sra/SRX5414820[accn]
-bin/fastq-dump --outdir fastq/ls1034 --gzip --skip-technical --readids --dumpbase --split-files --clip SRR8615580
+## MDST8 RNAseq: https://www.ncbi.nlm.nih.gov/sra/SRX5414820[accn]
+bin/fastq-dump --outdir mdst8/rna --gzip --skip-technical --readids --dumpbase --split-files --clip SRR8615580
+
+## MDST8 RRBS: https://www.ncbi.nlm.nih.gov/sra/SRX5432289[accn]
+bin/fastq-dump --outdir mdst8/rrbs --gzip --skip-technical --readids --dumpbase --split-files --clip SRR8633783
