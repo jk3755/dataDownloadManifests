@@ -1,19 +1,21 @@
 #!/bin/bash
-#
+##
+## Use parallel fastq-dump: https://github.com/rvalieris/parallel-fastq-dump
+##
 ## H508 WGS: https://www.ncbi.nlm.nih.gov/sra/SRX5466690[accn]
-bin/fastq-dump --outdir h508/wgs --gzip --skip-technical --readids --dumpbase --split-files --clip SRR8670690
+parallel-fastq-dump --sra-id SRR8670690 --threads 20 --outdir h508 --split-files --gzip
 
 ## SNU16 WGS: https://www.ncbi.nlm.nih.gov/sra/SRX5466612[accn]
-bin/fastq-dump --outdir snu16/wgs --gzip --skip-technical --readids --dumpbase --split-files --clip SRR8670768
+parallel-fastq-dump --sra-id SRR8670768 --threads 20 --outdir snu16/
 
 ## CAPAN1 WGS: https://www.ncbi.nlm.nih.gov/sra/SRX5437544[accn]
-bin/fastq-dump --outdir capan1/wgs --gzip --skip-technical --readids --dumpbase --split-files --clip SRR8639189
+parallel-fastq-dump --sra-id SRR8639189 --threads 20 --outdir capan1/
 
 ## LNCAP WGS: https://www.ncbi.nlm.nih.gov/sra/SRX2541290[accn]
-bin/fastq-dump --outdir lncap/wgs --gzip --skip-technical --readids --dumpbase --split-files --clip SRR5233717
-bin/fastq-dump --outdir lncap/wgs --gzip --skip-technical --readids --dumpbase --split-files --clip SRR5259501
-bin/fastq-dump --outdir lncap/wgs --gzip --skip-technical --readids --dumpbase --split-files --clip SRR5259502
-bin/fastq-dump --outdir lncap/wgs --gzip --skip-technical --readids --dumpbase --split-files --clip SRR5259503
+parallel-fastq-dump --sra-id SRR5233717 --threads 20 --outdir lncap/
+parallel-fastq-dump --sra-id SRR5259501 --threads 20 --outdir lncap/
+parallel-fastq-dump --sra-id SRR5259502 --threads 20 --outdir lncap/
+parallel-fastq-dump --sra-id SRR5259503 --threads 20 --outdir lncap/
 
 ## PANC1 WGS: https://www.ncbi.nlm.nih.gov/sra/?term=panc1
-bin/fastq-dump --outdir panc1/wgs --gzip --skip-technical --readids --dumpbase --split-files --clip SRR8670733
+parallel-fastq-dump --sra-id SRR8670733 --threads 20 --outdir panc1/
